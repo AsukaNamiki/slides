@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's08-abc',
-    order: 29,
+    order: 27,
     className: 'slide message',
     html: `
       <h2>業務適用レベルについて</h2>

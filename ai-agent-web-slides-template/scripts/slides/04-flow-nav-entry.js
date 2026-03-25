@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's04-flow-nav-entry',
-    order: 23,
+    order: 21,
     className: 'slide message',
     html: `
       <h2>次の解説: 入口（ユーザーインターフェース）</h2>

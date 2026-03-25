@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's09-trend',
-    order: 33,
+    order: 31,
     className: 'slide message',
     html: `
       <h2>AIエージェントの今後（潮流）</h2>

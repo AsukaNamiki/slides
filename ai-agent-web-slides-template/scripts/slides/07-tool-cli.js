@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tool-cli',
-    order: 19,
+    order: 17,
     className: 'slide message',
     html: `
       <h2>CLI（Command Line Interface）とは</h2>

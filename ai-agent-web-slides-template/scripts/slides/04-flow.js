@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's04-flow',
-    order: 10,
+    order: 8,
     className: 'slide message',
     html: `
       <h2>AIエージェントの構成要素（処理フロー）</h2>

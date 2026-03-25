@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's05-models',
-    order: 12,
+    order: 10,
     className: 'slide message model-chaos',
     html: `
       <h2>推論モデル選定の課題</h2>

@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-ui-desktop',
-    order: 26,
+    order: 24,
     className: 'slide message',
     html: `
       <h2>デスクトップアプリ</h2>

@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's03-goal',
-    order: 8,
+    order: 6,
     className: 'slide message',
     html: `
       <h2>今日のゴール</h2>

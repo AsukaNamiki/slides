@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's09-risk',
-    order: 34,
+    order: 32,
     className: 'slide message',
     html: `
       <h2>認識しておくべきリスク</h2>

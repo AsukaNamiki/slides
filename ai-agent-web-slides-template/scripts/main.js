@@ -1,14 +1,14 @@
 (function () {
   /* セクション定義 */
   var SECTIONS = [
-    { key: 'intro',   label: 'はじめに',       from: 1,  to: 8  },
-    { key: 'basics',  label: 'AIの基礎',       from: 9,  to: 10 },
-    { key: 'model',   label: '推論モデル',      from: 11, to: 15 },
-    { key: 'tools',   label: 'ツール連携',      from: 16, to: 22 },
-    { key: 'ui',      label: 'UI',             from: 23, to: 28 },
-    { key: 'apply',   label: '業務適用',        from: 29, to: 32 },
-    { key: 'future',  label: 'リスク管理',      from: 33, to: 35 },
-    { key: 'summary', label: 'まとめ',          from: 36, to: 36 },
+    { key: 'intro',   label: 'はじめに',       from: 1,  to: 6  },
+    { key: 'basics',  label: 'AIの基礎',       from: 7,  to: 8  },
+    { key: 'model',   label: '推論モデル',      from: 9,  to: 13 },
+    { key: 'tools',   label: 'ツール連携',      from: 14, to: 20 },
+    { key: 'ui',      label: 'UI',             from: 21, to: 26 },
+    { key: 'apply',   label: '業務適用',        from: 27, to: 30 },
+    { key: 'future',  label: 'リスク管理',      from: 31, to: 33 },
+    { key: 'summary', label: 'まとめ',          from: 34, to: 34 },
   ];
 
   function sectionFor(order) {
@@ -42,7 +42,7 @@
     slides.forEach(function (slide) {
       var order = parseInt(slide.getAttribute('data-order'), 10);
       /* タイトル(1)とまとめ(36)にはパンくず不要 */
-      if (order <= 1 || order >= 36) return;
+      if (order <= 1 || order >= 34) return;
 
       var current = sectionFor(order);
       if (!current) return;

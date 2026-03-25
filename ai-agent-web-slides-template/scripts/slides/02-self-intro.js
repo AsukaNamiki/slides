@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's02-self-intro',
-    order: 7,
+    order: 5,
     className: 'slide self-intro',
     html: `
       <h2>自己紹介: 並木 飛鳥（Asuka Namiki）</h2>

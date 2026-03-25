@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tool-skill',
-    order: 22,
+    order: 20,
     className: 'slide message',
     html: `
       <h2>Skill（再利用可能な手順パッケージ）とは</h2>

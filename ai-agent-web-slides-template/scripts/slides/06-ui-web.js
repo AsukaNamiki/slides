@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-ui-web',
-    order: 25,
+    order: 23,
     className: 'slide message',
     html: `
       <h2>Webアプリ</h2>

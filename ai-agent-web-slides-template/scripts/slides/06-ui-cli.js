@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-ui-cli',
-    order: 28,
+    order: 26,
     className: 'slide message',
     html: `
       <h2>ターミナル / CLI</h2>

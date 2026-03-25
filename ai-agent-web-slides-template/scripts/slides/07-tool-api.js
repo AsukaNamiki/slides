@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tool-api',
-    order: 18,
+    order: 16,
     className: 'slide message',
     html: `
       <h2>API（Application Programming Interface）とは</h2>

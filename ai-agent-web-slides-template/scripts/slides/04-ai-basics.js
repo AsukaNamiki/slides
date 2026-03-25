@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's04-ai-basics',
-    order: 9,
+    order: 7,
     className: 'slide message',
     html: `
       <h2>そもそもAIとは（Artificial Intelligence）</h2>

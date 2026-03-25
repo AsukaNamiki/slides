@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tool-script',
-    order: 20,
+    order: 18,
     className: 'slide message',
     html: `
       <h2>Script（スクリプト）とは</h2>

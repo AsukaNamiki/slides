@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's08-level-beginner',
-    order: 30,
+    order: 28,
     className: 'slide message',
     html: `
       <h2>初級でできること（具体例）</h2>

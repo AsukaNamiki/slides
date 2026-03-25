@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tool-mcp',
-    order: 21,
+    order: 19,
     className: 'slide message',
     html: `
       <h2>MCP（Model Context Protocol）とは</h2>

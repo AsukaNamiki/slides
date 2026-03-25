@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-ui-ide',
-    order: 27,
+    order: 25,
     className: 'slide message',
     html: `
       <h2>IDE（統合開発環境）</h2>

@@ -1,7 +1,7 @@
   (function () {
     window.SlideRegistry.register({
       id: 's06-ui',
-      order: 24,
+      order: 22,
       className: 'slide message ui-detail',
       html: `
         <h2>入口：「使いやすさ」と「柔軟性」のトレードオフ</h2>

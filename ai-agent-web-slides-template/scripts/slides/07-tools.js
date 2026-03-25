@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's07-tools',
-    order: 17,
+    order: 15,
     className: 'slide message',
     html: `
       <h2>ツール連携の関係図（全体像）</h2>

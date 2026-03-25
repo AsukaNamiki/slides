@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's04-flow-nav-inference',
-    order: 11,
+    order: 9,
     className: 'slide message',
     html: `
       <h2>次の解説: 推論（モデル選択）</h2>

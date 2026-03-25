@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's09-caution',
-    order: 35,
+    order: 33,
     className: 'slide message caution',
     html: `
       <h2>注意喚起: 便利さの裏で「事故」は実際に起きている</h2>

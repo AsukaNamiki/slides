@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's10-summary',
-    order: 36,
+    order: 34,
     className: 'slide hero',
     html: `
       <div class="hero-bg"></div>

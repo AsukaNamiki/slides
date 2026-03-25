@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's08-level-intermediate',
-    order: 31,
+    order: 29,
     className: 'slide message',
     html: `
       <h2>中級でできること（具体例）</h2>

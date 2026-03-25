@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's08-level-advanced',
-    order: 32,
+    order: 30,
     className: 'slide message',
     html: `
       <h2>上級でできること（具体例）</h2>

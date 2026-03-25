@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-model-conclusion-2',
-    order: 14,
+    order: 12,
     className: 'slide message',
     html: `
       <h2>推論モデルの選び方: コスト重視なら中華系モデルも</h2>

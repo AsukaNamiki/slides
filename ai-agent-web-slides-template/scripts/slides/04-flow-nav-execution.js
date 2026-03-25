@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's04-flow-nav-execution',
-    order: 16,
+    order: 14,
     className: 'slide message',
     html: `
       <h2>次の解説: 判断と実行（ツール連携）</h2>

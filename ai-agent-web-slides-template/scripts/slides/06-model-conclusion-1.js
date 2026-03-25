@@ -1,7 +1,7 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-model-conclusion-1',
-    order: 13,
+    order: 11,
     className: 'slide message',
     html: `
       <h2>推論モデルの選び方: まずは大手3社の最新モデルから選ぶ</h2>
