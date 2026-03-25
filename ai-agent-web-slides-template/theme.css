@@ -1,0 +1,20 @@
+:root {
+  /* Color tokens */
+  --bg: #f4fbf7;
+  --surface: #ffffff;
+  --text: #102019;
+  --muted: #3f5a4d;
+  --primary: #0f9d58;
+  --primary-dark: #0b6e3d;
+  --accent: #35c98a;
+  --warn: #e87a3b;
+
+  /* Typography tokens */
+  --font-family-body: "Noto Sans JP", sans-serif;
+  --font-family-heading: "Zen Kaku Gothic New", sans-serif;
+
+  --font-size-title: 56px;
+  --font-size-heading: 34px;
+  --font-size-body: 26px;
+  --font-size-note: 18px;
+}
