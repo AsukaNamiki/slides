@@ -2,7 +2,7 @@
   window.SlideRegistry.register({
     id: 's11-promo-consult',
     order: 36,
-    className: 'slide',
+    className: 'slide promo-bg',
     html: `
       <h2>1. 個別ITコンサル</h2>
       <div class="promo-detail">

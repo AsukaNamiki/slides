@@ -8,7 +8,7 @@
       <div class="focus-grid">
         <article>
           <h3>何者か</h3>
-          <p>API/CLIなどを順番に呼び出して、一連の作業を自動実行する手順書です。</p>
+          <p>API/CLIなどを順番に呼び出して、一連の作業を連続実行するパッケージです。</p>
         </article>
         <article>
           <h3>何ができるか</h3>
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <p class="footnote">Scriptは自動化の入口です。まず1業務・1手順から始めるのが安全です。</p>
+      <p class="footnote">Scriptは自動化の入口です。複数のAPIやCLIを毎回使う場合はスクリプト化を検討しましょう。</p>
     `,
   });
 })();

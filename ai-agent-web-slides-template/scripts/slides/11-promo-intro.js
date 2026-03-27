@@ -2,7 +2,7 @@
   window.SlideRegistry.register({
     id: 's11-promo-intro',
     order: 35,
-    className: 'slide',
+    className: 'slide promo-bg',
     html: `
       <h2>3つのサービスを始めます</h2>
       <div class="promo-grid">

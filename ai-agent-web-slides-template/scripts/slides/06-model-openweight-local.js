@@ -1,10 +1,10 @@
 (function () {
   window.SlideRegistry.register({
     id: 's06-model-openweight-local',
-    order: 13,
+    order: 51, // 参考セクションへ移動
     className: 'slide message',
     html: `
-      <h2>推論モデルの選び方: 初期投資ができるなら、オープンウェイトをローカル運用</h2>
+      <h2>【参考】推論モデルの選び方: 初期投資ができるなら、オープンウェイトをローカル運用</h2>
       <div class="goal-grid">
         <article>
           <h3>1. 向いているケース</h3>

@@ -21,7 +21,7 @@
         <article class="risk-card">
           <span class="risk-icon">⚖️</span>
           <h3>著作権・ライセンス</h3>
-          <p>生成物が既存著作物と類似する可能性。商用利用時はライセンス条件の確認が必要。</p>
+          <p>生成物が既存著作物と類似する可能性。</p>
         </article>
         <article class="risk-card">
           <span class="risk-icon">🤖</span>

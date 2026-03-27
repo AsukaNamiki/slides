@@ -1926,3 +1926,138 @@
     max-height: 250px;
   }
 }
+
+
+/* Pain point slide */
+.pain-examples {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.pain-card {
+  border-radius: 14px;
+  border: 1px solid rgba(16, 32, 25, 0.12);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 18px;
+  text-align: center;
+}
+
+.pain-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.pain-card h3 {
+  margin: 10px 0 0;
+  font-size: 22px;
+  color: var(--primary-dark);
+}
+
+.pain-card p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* Solution hero slide */
+.solution-hero {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(15, 157, 88, 0.12), transparent 60%),
+    linear-gradient(150deg, #f9fffb, #ecf8f1);
+}
+
+.solution-content {
+  text-align: center;
+}
+
+.solution-headline {
+  font-size: 560px;
+  line-height: 1.0;
+  color: var(--primary-dark);
+  font-weight: 900;
+}
+
+.solution-highlight {
+  color: var(--primary);
+  font-size: 1.3em;
+  background: linear-gradient(180deg, transparent 60%, rgba(15, 157, 88, 0.25) 60%);
+}
+
+/* Opening combined slide */
+.opening-combined {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(53, 201, 138, 0.18), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(15, 157, 88, 0.12), transparent 50%),
+    linear-gradient(150deg, #f9fffb, #ecf8f1);
+}
+
+.opening-messages {
+  display: grid;
+  gap: 28px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.opening-line {
+  margin: 0;
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.5;
+  color: #2a3d34;
+  font-weight: 600;
+}
+
+.opening-line strong {
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.opening-cta {
+  margin-top: 12px;
+  padding-top: 24px;
+  border-top: 2px solid rgba(15, 157, 88, 0.2);
+}
+
+@media (max-width: 900px) {
+  .pain-examples {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .pain-card h3 {
+    font-size: 18px;
+  }
+
+  .pain-card p {
+    font-size: 14px;
+  }
+
+  .solution-headline {
+    font-size: clamp(36px, 8vw, 56px);
+  }
+
+  .opening-messages {
+    gap: 20px;
+  }
+
+  .opening-line {
+    font-size: clamp(20px, 4vw, 28px);
+  }
+}
+
+
+/* Promo background gradient */
+.promo-bg {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(53, 201, 138, 0.22), transparent 50%),
+    radial-gradient(circle at 85% 80%, rgba(15, 157, 88, 0.14), transparent 50%),
+    linear-gradient(150deg, #f9fffb, #ecf8f1);
+}

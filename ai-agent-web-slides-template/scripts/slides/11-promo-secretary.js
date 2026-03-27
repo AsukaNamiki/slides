@@ -2,7 +2,7 @@
   window.SlideRegistry.register({
     id: 's11-promo-secretary',
     order: 37,
-    className: 'slide',
+    className: 'slide promo-bg',
     html: `
       <h2>2. あなただけのAI秘書</h2>
       <div class="promo-detail promo-vertical">
