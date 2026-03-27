@@ -30,14 +30,6 @@
         </article>
       </div>
       <p class="footnote">今回は一般的に使える概念や考え方をメインにお伝えしました。個別具体の設定方法等については別途ご相談ください。</p>
-
-      <div class="survey-box">
-        <img class="survey-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fforms.gle%2FQDwfjdTtPnpYrbGu5" alt="アンケートQRコード" />
-        <div class="survey-text">
-          <h3>アンケートにご協力ください</h3>
-          <a href="https://forms.gle/QDwfjdTtPnpYrbGu5" target="_blank" rel="noopener noreferrer">https://forms.gle/QDwfjdTtPnpYrbGu5</a>
-        </div>
-      </div>
     `,
   });
 })();

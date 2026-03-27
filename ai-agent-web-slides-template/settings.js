@@ -32,4 +32,14 @@ window.SLIDE_SETTINGS = {
     alphaMin: 0.18,
     alphaMax: 0.52,
   },
+  sections: [
+    { key: 'intro',   label: 'はじめに',       from: 1,  to: 6  },
+    { key: 'basics',  label: 'AIの基礎',       from: 7,  to: 8  },
+    { key: 'model',   label: '推論モデル',      from: 9,  to: 13 },
+    { key: 'tools',   label: 'ツール連携',      from: 14, to: 20 },
+    { key: 'ui',      label: 'UI',             from: 21, to: 26 },
+    { key: 'apply',   label: '業務適用',        from: 27, to: 30 },
+    { key: 'future',  label: 'リスク管理',      from: 31, to: 33 },
+    { key: 'summary', label: 'まとめ',          from: 34, to: 34 },
+  ],
 };

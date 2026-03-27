@@ -1,19 +1,14 @@
 (function () {
-  /* セクション定義 */
-  var SECTIONS = [
-    { key: 'intro',   label: 'はじめに',       from: 1,  to: 6  },
-    { key: 'basics',  label: 'AIの基礎',       from: 7,  to: 8  },
-    { key: 'model',   label: '推論モデル',      from: 9,  to: 13 },
-    { key: 'tools',   label: 'ツール連携',      from: 14, to: 20 },
-    { key: 'ui',      label: 'UI',             from: 21, to: 26 },
-    { key: 'apply',   label: '業務適用',        from: 27, to: 30 },
-    { key: 'future',  label: 'リスク管理',      from: 31, to: 33 },
-    { key: 'summary', label: 'まとめ',          from: 34, to: 34 },
-  ];
+  /* セクション定義は settings.js から読み込み */
+  function getSections() {
+    var settings = window.SLIDE_SETTINGS || {};
+    return settings.sections || [];
+  }
 
   function sectionFor(order) {
-    for (var i = 0; i < SECTIONS.length; i++) {
-      if (order >= SECTIONS[i].from && order <= SECTIONS[i].to) return SECTIONS[i];
+    var sections = getSections();
+    for (var i = 0; i < sections.length; i++) {
+      if (order >= sections[i].from && order <= sections[i].to) return sections[i];
     }
     return null;
   }
@@ -38,11 +33,12 @@
 
   /* パンくずナビを各スライドに挿入 */
   function insertBreadcrumbs() {
+    var sections = getSections();
+    var lastOrder = sections.length ? sections[sections.length - 1].to : 0;
     var slides = document.querySelectorAll('[data-order]');
     slides.forEach(function (slide) {
       var order = parseInt(slide.getAttribute('data-order'), 10);
-      /* タイトル(1)とまとめ(36)にはパンくず不要 */
-      if (order <= 1 || order >= 34) return;
+      if (order <= 1 || order >= lastOrder) return;
 
       var current = sectionFor(order);
       if (!current) return;
@@ -52,13 +48,13 @@
       nav.setAttribute('aria-label', 'セクションナビ');
 
       var html = '';
-      for (var i = 0; i < SECTIONS.length; i++) {
-        var s = SECTIONS[i];
+      for (var i = 0; i < sections.length; i++) {
+        var s = sections[i];
         if (s.key === 'summary') continue;
         var cls = 'bc-item';
         if (s.key === current.key) cls += ' bc-active';
         html += '<span class="' + cls + '">' + s.label + '</span>';
-        if (i < SECTIONS.length - 2) html += '<span class="bc-sep">/</span>';
+        if (i < sections.length - 2) html += '<span class="bc-sep">/</span>';
       }
       nav.innerHTML = html;
       slide.insertBefore(nav, slide.firstChild);
@@ -70,12 +66,13 @@
     var container = document.querySelector('.hero-toc-inline');
     if (!container) return;
 
+    var sections = getSections();
     var html = '<p class="hero-toc-heading">目次</p><div class="hero-toc-grid">';
-    for (var i = 0; i < SECTIONS.length; i++) {
+    for (var i = 0; i < sections.length; i++) {
       var num = (i + 1 < 10 ? '0' : '') + (i + 1);
       html += '<div class="hero-toc-item">';
       html += '<span class="hero-toc-num">' + num + '</span>';
-      html += '<span class="hero-toc-text">' + SECTIONS[i].label + '</span>';
+      html += '<span class="hero-toc-text">' + sections[i].label + '</span>';
       html += '</div>';
     }
     html += '</div>';
