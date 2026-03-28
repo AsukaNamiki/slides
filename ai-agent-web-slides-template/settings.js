@@ -4,8 +4,8 @@ window.SLIDE_SETTINGS = {
     width: 1600,
     height: 900,
     margin: 0.03,
-    minScale: 0.2,
-    maxScale: 2.0,
+    minScale: 0.1,
+    maxScale: 1.0,
     hash: true,
     controls: true,
     progress: true,
@@ -13,6 +13,7 @@ window.SLIDE_SETTINGS = {
     transition: 'slide',
     backgroundTransition: 'fade',
     center: false,
+    disableLayout: false,
   },
   heroLeafEffect: {
     palette: ['#0f9d58', '#35c98a', '#0b6e3d', '#8fe7be'],
