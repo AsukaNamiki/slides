@@ -781,6 +781,13 @@
 }
 
 /* UI detail page layout (06-ui-web/desktop/ide/cli) */
+.ui-intro {
+  margin: -4px 0 10px;
+  font-size: 18px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .ui-detail-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -8,19 +8,19 @@
       <div class="focus-grid">
         <article>
           <h3>何者か</h3>
-          <p>テキスト命令（コマンド）で処理を実行するツール。GUIなしで動く軽量な実行部品です。</p>
+          <p>テキストコマンドで処理を実行するツール。GUIなしで動く軽量な実行手段です。</p>
         </article>
         <article>
           <h3>何ができるか</h3>
           <ul class="goal-abc-list">
-            <li>1コマンドで処理を即実行</li>
-            <li>Scriptやスケジューラに組み込める</li>
-            <li>操作ログが残り再現しやすい</li>
+            <li>ファイルを操作する</li>
+            <li>データを変換・集計する</li>
+            <li>外部サービスに接続する</li>
           </ul>
         </article>
         <article>
           <h3>使う場面</h3>
-          <p>自動化処理の部品として使います。</p>
+          <p>Scriptに組み込んで自動化の部品として使います。</p>
         </article>
       </div>
 
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <p class="footnote">CLI単体は「1回の実行部品」。繰り返しや定期実行はScriptやスケジューラと組み合わせます。</p>
+      <p class="footnote">CLI単体は「1回の実行部品」。繰り返しや定期実行はScriptと組み合わせます。</p>
     `,
   });
 })();
