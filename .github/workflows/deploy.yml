@@ -35,6 +35,7 @@ jobs:
           mkdir -p _site
           cp -r ai-agent-web-slides-template _site/ai-agent-web-slides-template
           cp -r aiyo/dist _site/aiyo
+          cp _site/aiyo/index.html _site/aiyo/404.html
           echo '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>Slides</title></head><body><h1>Slides</h1><ul><li><a href="./ai-agent-web-slides-template/">AIエージェント活用講座</a></li><li><a href="./aiyo/">愛葉（aiyo-）</a></li></ul></body></html>' > _site/index.html
 
       - uses: actions/configure-pages@v5
