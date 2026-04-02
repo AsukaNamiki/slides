@@ -1,5 +1,5 @@
 window.SLIDE_SETTINGS = {
-  footerDatePlaceholder: '2026/04/xx',
+  footerDatePlaceholder: '2026/04/02',
   reveal: {
     width: 1600,
     height: 900,

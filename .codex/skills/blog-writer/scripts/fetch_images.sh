@@ -5,6 +5,11 @@
 QUERY="${1:-AI}"
 COUNT="${2:-3}"
 
+# config.envから読み込み（環境変数が未設定の場合）
+if [ -z "$PEXELS_API_KEY" ] && [ -f "demo/advanced/config.env" ]; then
+  PEXELS_API_KEY=$(grep '^PEXELS_API_KEY=' demo/advanced/config.env | cut -d= -f2)
+fi
+
 if [ -z "$PEXELS_API_KEY" ]; then
   echo "Error: PEXELS_API_KEY environment variable is not set" >&2
   echo "Using sample images instead..." >&2

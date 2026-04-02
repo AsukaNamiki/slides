@@ -1,3 +1,6 @@
 .DS_Store
 生成AI講義_概要.md
 demo/advanced/config.env
+
+aiyo/dist/
+aiyo/node_modules/

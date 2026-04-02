@@ -1,0 +1,29 @@
+:root {
+  --aiyo-green: #0f9d58;
+  --aiyo-green-dark: #0b6e3d;
+  --aiyo-green-light: #35c98a;
+  --aiyo-green-pale: #e8f5e9;
+  --aiyo-text: #1a372b;
+  --aiyo-muted: #4a6b5d;
+  --aiyo-bg: #f9fffb;
+  --aiyo-white: #ffffff;
+}
+
+.slidev-layout {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--aiyo-text);
+  background: linear-gradient(160deg, #f9fffb 0%, #ecf8f1 40%, #dff5ea 100%);
+}
+
+h1, h2, h3 {
+  font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
+  color: var(--aiyo-green-dark);
+  font-weight: 900;
+}
+
+.footnote {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--aiyo-muted);
+  font-weight: 600;
+}

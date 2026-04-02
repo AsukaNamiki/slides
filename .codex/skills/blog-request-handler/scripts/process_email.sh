@@ -202,6 +202,30 @@ gws gmail users messages modify \
   --params "{\"userId\": \"me\", \"id\": \"${MESSAGE_ID}\"}" \
   --json '{"removeLabelIds": ["UNREAD"]}' 2>/dev/null | grep -v "^Using keyring" || true
 
+
+# Google Tasksにレビュータスクを追加
+log "📋 レビュータスクを追加中..."
+TASK_LIST_ID="${TASK_LIST_ID:-MDc5MzgzNzUyMzYzMzU0MDc1NTM6MDow}"
+DUE_DATE=$(date -v+1d +%Y-%m-%dT00:00:00Z 2>/dev/null || date -d "+1 day" +%Y-%m-%dT00:00:00Z 2>/dev/null || echo "")
+
+TASK_JSON="{\"title\": \"ブログ記事レビュー: ${THEME}\", \"notes\": \"依頼元: ${FROM}\\n記事ファイル: ${ARTICLE_FILE}\\nGmail下書きを確認して送信してください。\""
+if [ -n "$DUE_DATE" ]; then
+  TASK_JSON="${TASK_JSON}, \"due\": \"${DUE_DATE}\""
+fi
+TASK_JSON="${TASK_JSON}}"
+
+TASK_RESULT=$(gws tasks tasks insert \
+  --params "{\"tasklist\": \"${TASK_LIST_ID}\"}" \
+  --json "$TASK_JSON" 2>&1 | grep -v "^Using keyring")
+
+if echo "$TASK_RESULT" | grep -q '"id"'; then
+  TASK_LINK=$(echo "$TASK_RESULT" | jq -r '.webViewLink // empty' 2>/dev/null)
+  log "✅ レビュータスクを追加しました"
+else
+  TASK_LINK=""
+  log "⚠️ タスク追加に失敗: $TASK_RESULT"
+fi
+
 # Slackに完了報告
 SLACK_MESSAGE="✅ ブログ記事を作成しました
 
@@ -209,7 +233,12 @@ SLACK_MESSAGE="✅ ブログ記事を作成しました
 📝 テーマ: $THEME
 📄 文字数: ${CHAR_COUNT}文字
 
-Gmailに返信下書きを作成しました。確認してください。"
+Gmailに返信下書きを作成しました。"
+
+if [ -n "$TASK_LINK" ]; then
+  SLACK_MESSAGE="${SLACK_MESSAGE}
+📋 レビュータスク: ${TASK_LINK}"
+fi
 
 upload_to_slack "$ARTICLE_FILE" "$SLACK_MESSAGE"
 

@@ -1,0 +1,13 @@
+{
+  "name": "aiyo-slides",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /slides/aiyo/",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}
