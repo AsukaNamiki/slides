@@ -227,13 +227,39 @@ layout: none
 
 # 自己紹介
 
-<div class="flex items-center gap-12 mt-8">
-  <div class="flex-1">
-    <h2 class="text-3xl font-bold text-green-800">並木 飛鳥（Asuka Namiki）</h2>
-    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-      愛葉（aiyo-）代表。<br>
-      現役ITエンジニアとして、AI活用・業務自動化の支援を行っています。
-    </p>
+<div class="intro-layout">
+  <div class="intro-visual">
+    <div class="intro-portrait">
+      <div class="pulse-ring ring-a"></div>
+      <div class="pulse-ring ring-b"></div>
+      <img class="intro-photo" src="/profile.png" alt="並木 飛鳥" />
+    </div>
+    <p class="intro-name">並木 飛鳥</p>
+    <p class="intro-sub">愛葉（aiyo-）代表</p>
+  </div>
+  <div class="intro-cards">
+    <div class="intro-card">
+      <h4>大学・大学院（2016〜2022）</h4>
+      <ul>
+        <li>北海道大学 理学部物理学科</li>
+        <li>東京大学 ICEPP（浅井研）で検出器研究</li>
+      </ul>
+    </div>
+    <div class="intro-card">
+      <h4>ダイキン工業（2022〜2024）</h4>
+      <ul>
+        <li>圧縮機コア技術の先行開発</li>
+        <li>Pythonシミュレーション・Webアプリ開発</li>
+      </ul>
+    </div>
+    <div class="intro-card">
+      <h4>シーエーシー（2024〜）</h4>
+      <ul>
+        <li>AWS案件のPMとしてクラウド移行支援</li>
+        <li>インフラ設計・構築・内製化支援</li>
+      </ul>
+    </div>
+    <p class="intro-link">🔗 <a href="https://portfolio.namikia.net/" target="_blank">portfolio.namikia.net</a></p>
   </div>
 </div>
 
