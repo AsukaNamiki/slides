@@ -8,6 +8,7 @@ fonts:
   serif: 'Zen Kaku Gothic New'
   weights: '400,700,900'
 slideNumber: true
+routerMode: hash
 ---
 
 <style>
